@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>Best Deals Hub - 
+           Top Product Reviews</title>
+    <style>
+        * { margin:0; padding:0; 
+            box-sizing:border-box; }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #111;
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #6c5ce7;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #6c5ce7;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 80px 24px;
+            background: linear-gradient(
+                135deg, #111 0%, #1a1a2e 100%
+            );
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: #fff;
+        }
+
+        .hero h1 span { color: #6c5ce7; }
+
+        .hero p {
+            color: #888;
+            font-size: 1.1rem;
+            margin-bottom: 32px;
+        }
+
+        .hero a {
+            background: #6c5ce7;
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        /* DISCLOSURE */
+        .disclosure {
+            background: #1a1a2e;
+            border-left: 4px solid #6c5ce7;
+            padding: 16px 32px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        /* CATEGORIES */
+        .section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 24px;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 
+                repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        /* REVIEW CARD */
+        .card {
+            background: #1e1e3f;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: transform 0.3s, 
+                        border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #6c5ce7;
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .card p {
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: #6c5ce7;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        /* COMING SOON */
+        .coming-soon {
+            background: #1a1a2e;
+            border-radius: 16px;
+            padding: 60px 24px;
+            text-align: center;
+            margin: 60px 24px;
+        }
+
+        .coming-soon h2 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .coming-soon p {
+            color: #888;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111;
+            padding: 40px 32px;
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+            border-top: 1px solid #222;
+        }
+
+        footer p { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">🛒 BestDealsHub</div>
+    <div>
+        <a href="#reviews">Reviews</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
+
+<!-- AFFILIATE DISCLOSURE (REQUIRED!) -->
+<div class="disclosure">
+    ⚠️ <strong>Affiliate Disclosure:</strong>
+    BestDealsHub.com participates in affiliate 
+    marketing programs including Amazon Associates. 
+    We earn commissions from qualifying purchases 
+    made through our links at no extra cost to you.
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Find The <span>Best Deals</span> Online</h1>
+    <p>
+        Honest product reviews and price comparisons 
+        across top platforms
+    </p>
+    <a href="#reviews">Browse Reviews ↓</a>
+</div>
+
+<!-- CATEGORIES -->
+<div class="section" id="categories">
+    <h2>Browse Categories</h2>
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-icon">📱</div>
+            <h3>Electronics & Gadgets</h3>
+            <p>
+                Latest smartphones, laptops, 
+                earbuds, smartwatches and 
+                accessories reviewed and 
+                compared.
+            </p>
+            <a href="#reviews">View Reviews</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🏠</div>
+            <h3>Home & Kitchen</h3>
+            <p>
+                Best home appliances, kitchen 
+                tools and smart home devices 
+                at the best prices.
+            </p>
+            <a href="#reviews">View Reviews</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">👕</div>
+            <h3>Fashion & Clothing</h3>
+            <p>
+                Top rated clothing, shoes and 
+                accessories from trusted brands 
+                on Amazon and Daraz.
+            </p>
+            <a href="#reviews">View Reviews</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📚</div>
+            <h3>Books & Education</h3>
+            <p>
+                Best selling books, study 
+                materials and online courses 
+                with honest ratings.
+            </p>
+            <a href="#reviews">View Reviews</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">⚽</div>
+            <h3>Sports & Fitness</h3>
+            <p>
+                Gym equipment, yoga mats, 
+                sports gear and fitness 
+                accessories compared.
+            </p>
+            <a href="#reviews">View Reviews</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">💄</div>
+            <h3>Beauty & Health</h3>
+            <p>
+                Skincare, health supplements 
+                and beauty products with 
+                genuine customer ratings.
+            </p>
+            <a href="#reviews">View Reviews</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- REVIEWS SECTION -->
+<div class="section" id="reviews">
+    <h2>Latest Product Reviews</h2>
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-icon">🎧</div>
+            <h3>
+                Best Wireless Earbuds 2025 - 
+                Complete Buying Guide
+            </h3>
+            <p>
+                We compared 15 wireless earbuds 
+                under different price ranges. 
+                Find the perfect earbuds for 
+                your budget and needs.
+            </p>
+            <a href="#">Read Review →</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">⌚</div>
+            <h3>
+                Top 10 Smart Watches - 
+                Features vs Price
+            </h3>
+            <p>
+                From budget trackers to premium 
+                smartwatches. Our detailed 
+                comparison helps you decide 
+                what to buy.
+            </p>
+            <a href="#">Read Review →</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">💻</div>
+            <h3>
+                Best Budget Laptops 2025 - 
+                Under $500
+            </h3>
+            <p>
+                Performance, battery life and 
+                build quality tested. Find the 
+                best laptop for students and 
+                professionals.
+            </p>
+            <a href="#">Read Review →</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- COMING SOON -->
+<div class="coming-soon">
+    <h2>🚀 More Reviews Coming Soon!</h2>
+    <p>
+        We are adding new product reviews 
+        and deals every week.
+    </p>
+    <br>
+    <p style="color:#6c5ce7; font-weight:700;">
+        Bookmark this page and check back soon!
+    </p>
+</div>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+    <div class="card" style="text-align:center; 
+                              max-width:600px; 
+                              margin:0 auto;">
+        <div class="card-icon">👋</div>
+        <h3>About BestDealsHub</h3>
+        <p>
+            We are a product review website that 
+            helps consumers make smart buying 
+            decisions. We research, compare and 
+            review products across major platforms 
+            including Amazon, Daraz, and AliExpress 
+            to find you the best deals available 
+            online.
+        </p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 BestDealsHub - All Rights Reserved</p>
+    <p>
+        As an Amazon Associate, we earn from 
+        qualifying purchases.
+    </p>
+    <p style="margin-top:8px;">
+        <a href="#" 
+           style="color:#6c5ce7; 
+                  text-decoration:none;">
+            Privacy Policy
+        </a> | 
+        <a href="#" 
+           style="color:#6c5ce7; 
+                  text-decoration:none;">
+            Disclaimer
+        </a> | 
+        <a href="#" 
+           style="color:#6c5ce7; 
+                  text-decoration:none;">
+            Contact
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>
